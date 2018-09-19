@@ -7,7 +7,10 @@ body {
 	font-family: Lato;
 	background-color: #2C3E50;
 	color: #ECF0F1;
+	display: flex;
+	flex-direction: column;
 }
+
 h1, h2 {
 	text-align: center;
 	margin: 2rem;
@@ -24,4 +27,7 @@ h2 {
 }
 .row {
 	background-color: gray;
+	margin: 2em;
+	padding: 1em;
+	justify-content: space-around;
 }
