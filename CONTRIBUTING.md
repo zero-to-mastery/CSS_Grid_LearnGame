@@ -5,7 +5,7 @@
 
 Before you start, please read through all the resources carefully on this link below.
 
-* [HowToContribute](https://github.com/zero-to-mastery/start-here-guidelines) - Open source contribution guideline for all Zero to Master course students
+* [HowToContribute](https://github.com/zero-to-mastery/start-here-guidelines) - Open source contribution guideline for all Zero to Mastery course students
 
 ## Prerequisites
 
@@ -75,9 +75,11 @@ Let say you want to add 'align-self' property. Then code like this. Here's a sam
 
 ```
 
-Then just simply add it at the end of the fuction. But becareful. Put it before else statement.
+Then just simply add it at the end of the fuction. But be careful. Put it before 'else' statement.
 
 ```javascript
+
+  <Your new code here >
 
   else {
     return [];
