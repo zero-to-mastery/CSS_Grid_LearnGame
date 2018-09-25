@@ -1,0 +1,19 @@
+/*board containing all fires*/
+.certificate {
+	background: white;
+	height: 70vh;
+    margin: 5rem 3rem 3rem 3rem;
+}
+
+.control_question0 {
+color: white;
+margin: auto;
+}
+
+.control_mission0 {
+width: 80%;
+padding: 1rem;
+margin: 0 auto;
+text-align: left;
+word-spacing: 0.2rem;
+}
