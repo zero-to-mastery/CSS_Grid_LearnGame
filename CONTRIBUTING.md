@@ -98,11 +98,11 @@ Then just simply add it at the end of the fuction. But be careful. Put it before
 Go to `src > Components > Control.js`. Control.js contains all the views on the left. It contains questions and html forms. So first thing you could do is..
 
 Add it after `import Control3 ... `
-```
+```javascript
 import Control4 from './Subcomponents/Level4/Control4';
 ```
 then add it at the end of Route fuction.
-```
+```javascript
 case 4:
 	return <Control4 spell_input={spell_input} spell_submit={spell_submit} level={level}/>
 ```
@@ -114,11 +114,11 @@ So it's like copy and paste. And change the numbers from 3 to 4. That's it.
 Go to `src > Components > Board.js`. Board.js contains all the views on the right. It contains the square board, fires and the Dragons. It's pretty much the same with the step 2.
 
 Add it after `import Board3 ... `
-```
+```javascript
 import Board4 from './Subcomponents/Level4/Board4';
 ```
 then add it at the end of Route fuction.
-```
+```javascript
 case 4:
 	return <Board4 fire_spell={fire_spell} level={level}/>
 ```
@@ -145,7 +145,7 @@ Go to `Level4.css`. It's important step! You can see two class names. Change the
 `.board_fires4` will setup the initial position for the fires. In most casees, you don't need to change. User will change the position. 
 `.board_monsters4` will setup the initial position for the monsters. Since we decided to use `flex-flow` property, let's do this.
 
-```
+```css
 .board_monsters4{
   display: flex; /*default value => flex*/
   flex-flow: column-reverse;
@@ -160,7 +160,7 @@ So the solution and the user input must match with 'flex-flow: column-reverse' &
 
 Go to `src > Components > Solutions > SolutionContainer.js`. It's another core function that returns the solutions. So add the solution for the stage 4 like below snippet.
 
-```
+```javascript
 case "solution4":
 	return {flexFlow: "column-reverse", alignItems: "center"}
 ``` 
@@ -173,12 +173,11 @@ You like it? then make your pull request!!!
 
 ### Additional step
 
-- Okay. You want to change the colors of fires and monsters? Go to `Board4.js`. We have three types of fires and dragons. You simply change the imported image, you can change the view of your stage.
-Here's an example.
+- Okay. You want to change the colors of fires and monsters? Go to `Board4.js`. We have three types of fires and dragons. You can simply change the imported image, and then the view of your stage will be changed.
 
 Choose what you want from this snippet below.
 
-```
+```javascript
 import DragonR from '../../img/dragon_red.png';
 import DragonY from '../../img/dragon_yellow.png';
 import DragonB from '../../img/dragon_blue.png';
@@ -190,6 +189,6 @@ import FireB from '../../img/fire_blue.png';
 
 - Okay. You want to give some hint for the players? Go to `Control4.js`. Edit the text. You want to change some css? You can customize it! Create a new classname. And put it at `Level4.css`. 
 
-I think that's all for the guideline `How to build next stage`! Before you make a pull request, please make sure that if someone already developed `stage #4`. In that case, you should change the name of your stage, at #5 or accordingly. 
+I think that's all for the guideline `How to build next stage`! Before you make a pull request, please make sure that if someone already developed `stage #4` in the ZTM master repository. In that case, you should sync first and then change the name of your stage, at #5 or accordingly. 
 
 If you have anyquestion, please leave a comment on Discord channel #group-project. 
