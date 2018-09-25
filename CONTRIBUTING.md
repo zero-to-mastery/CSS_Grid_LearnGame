@@ -141,7 +141,7 @@ On Board4.js & Control4.js, just edit it `import './Level3.css'` to `import './L
 
 ### Step5
 
-Go to `Level4.css`. You can see two class naems. Change the names from `~3` to `~4`. 
+Go to `Level4.css`. It's important step! You can see two class names. Change the names from `~3` to `~4`. 
 `.board_fires4` will setup the initial position for the fires. In most casees, you don't need to change. User will change the position. 
 `.board_monsters4` will setup the initial position for the monsters. Since we decided to use `flex-flow` property, let's do this.
 
