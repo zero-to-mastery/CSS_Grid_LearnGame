@@ -22,6 +22,8 @@ Scroll down to see how to create new stage guide!
 
 3.Any typo errors.
 
+4.Certificate css format. 
+
 ```
 
 If you've all done with Andrei's `ZeroToMaster CWD` course, then you could do this.
@@ -43,6 +45,8 @@ If you are taking Andrei's `Junior to Senior` course, then you could contribute 
 2.Unit Test
 
 3.Issue Reporting
+
+4.Core function optimization
 ```
 
 ## Next Stage Development (Stage 4)
@@ -52,22 +56,24 @@ If you are taking Andrei's `Junior to Senior` course, then you could contribute 
 
 Go to `src > Components > SpellParsing > SpellParsing.js`. It's a core function for this app. It convernts user input to JSX style css code. For instance, if user inputs "justify-content : flex-end", then the function converts it to "justifyContent : flex-end" which React can read. So before you make your own stage, you need to check if the function can read. If there's not what you want, then you can simply add the code.
 
-Let say you want to add 'align-self' property. Then code like this. Here's a sample snippet. 
+Let say you want to add 'flex-flow' property. Then code like this. Here's a sample snippet. 
 
 ```javascript
 
-  else if (firstSpell === "align-self") {
+  else if (firstSpell === "flex-flow") {
     switch(lastSpell) {
-      case "flex-start" :
-        return ["alignSelf", "flex-start"]
-      case "flex-end" :
-        return ["alignSelf", "flex-end"]
-      case "center" :
-        return ["alignSelf", "center"]
-      case "baseline" :
-        return ["alignSelf", "baseline"]
-      case "stretch" :
-        return ["alignSelf", "stretch"]
+      case "row" :
+        return ["flexFlow", "row"]
+      case "row-reverse" :
+        return ["flexFlow", "row-reverse"]
+      case "column" :
+        return ["flexFlow", "column"]
+      case "column-reverse" :
+        return ["flexFlow", "column-reverse"]
+      case "wrap" :
+        return ["flexFlow", "wrap"]
+      case "wrap-reverse" :
+        return ["flexFlow", "wrap-reverse"]
       default:
         return [];
     }
@@ -91,12 +97,99 @@ Then just simply add it at the end of the fuction. But be careful. Put it before
 
 Go to `src > Components > Control.js`. Control.js contains all the views on the left. It contains questions and html forms. So first thing you could do is..
 
-add this right after `import Control3 ... `
+Add it after `import Control3 ... `
 ```
 import Control4 from './Subcomponents/Level4/Control4';
 ```
-then at the end of Route fuction.
+then add it at the end of Route fuction.
 ```
 case 4:
 	return <Control4 spell_input={spell_input} spell_submit={spell_submit} level={level}/>
 ```
+
+So it's like copy and paste. And change the numbers from 3 to 4. That's it.
+
+### Step3
+
+Go to `src > Components > Board.js`. Board.js contains all the views on the right. It contains the square board, fires and the Dragons. It's pretty much the same with the step 2.
+
+Add it after `import Board3 ... `
+```
+import Board4 from './Subcomponents/Level4/Board4';
+```
+then add it at the end of Route fuction.
+```
+case 4:
+	return <Board4 fire_spell={fire_spell} level={level}/>
+```
+
+Okay. Let's move on to the next step. 
+
+### Step4
+
+You should create a folder `Level4` under this path. `src > Components > Subcomponents > "Level4"`. So copy all the files in `Level3` and paste it to `Level4`. Change the file name by editting `3` to `4`.
+So the list of files will look like this.
+
+```
+Board4.js
+Control4.js
+Level4.css
+```
+
+Each file contains unique view for the stage 4. You need to edit only one line of code for each!!! One line. 
+On Board4.js & Control4.js, just edit it `import './Level3.css'` to `import './Level4.css'`. 
+
+### Step5
+
+Go to `Level4.css`. You can see two class naems. Change the names from `~3` to `~4`. 
+`.board_fires4` will setup the initial position for the fires. In most casees, you don't need to change. User will change the position. 
+`.board_monsters4` will setup the initial position for the monsters. Since we decided to use `flex-flow` property, let's do this.
+
+```
+.board_monsters4{
+  display: flex; /*default value => flex*/
+  flex-flow: column-reverse;
+  align-items: center;
+}
+
+```
+
+So the solution and the user input must match with 'flex-flow: column-reverse' & 'align-items: center'. You got it right?
+
+### Step6
+
+Go to `src > Components > Solutions > SolutionContainer.js`. It's another core function that returns the solutions. Since stage 4's solution is align-self:center, let add a snippet like below.
+
+```
+case "solution4":
+	return {flexFlow: "column-reverse", alignItems: "center"}
+``` 
+
+Be careful. It's an javascript object. {key : "value", key2 : "value2"} format. 
+
+I think that's it for now. Let's run this code!
+
+You like it? then make your pull request!!!
+
+### Additional step
+
+- Okay. You want to change the colors of fires and monsters? Go to `Board4.js`. We have three types of fires and dragons. You simply change the imported image, you can change the view of your stage.
+Here's an example.
+
+Choose what you want from this snippet below.
+
+```
+import DragonR from '../../img/dragon_red.png';
+import DragonY from '../../img/dragon_yellow.png';
+import DragonB from '../../img/dragon_blue.png';
+
+import FireR from '../../img/fire_red.png';
+import FireY from '../../img/fire_yellow.png';
+import FireB from '../../img/fire_blue.png';
+```
+
+- Okay. You want to give some hint for the players? Go to `Control4.js`. Edit the text. You want to change some css? You can customize it! Create a new classname. And put it at `Level4.css`. 
+
+I think that's all for the guideline `How to build next stage`! Before you make a pull request, please make sure that if someone already developed `stage #4`. In that case, you should change the name of your stage, at #5 or accordingly. 
+
+If you have anyquestion, please leave a comment on Discord channel #group-project. 
