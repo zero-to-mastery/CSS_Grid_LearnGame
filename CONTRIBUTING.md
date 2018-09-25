@@ -158,7 +158,7 @@ So the solution and the user input must match with 'flex-flow: column-reverse' &
 
 ### Step6
 
-Go to `src > Components > Solutions > SolutionContainer.js`. It's another core function that returns the solutions. Since stage 4's solution is align-self:center, let add a snippet like below.
+Go to `src > Components > Solutions > SolutionContainer.js`. It's another core function that returns the solutions. So add the solution for the stage 4 like below snippet.
 
 ```
 case "solution4":
