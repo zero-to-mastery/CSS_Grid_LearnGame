@@ -3,6 +3,8 @@
 
 ![](sample.jpg)
 
+It's bascially a froggy-flexbox style game app built with React.js. Currently only 3 stages have been developed. After stage #4 is totally up to you. Be creative! If you want to enjoy this app in your local computer, then download the source and have your computer setup with Node.js. Then you are good to go. If you feel like you want to contribute, then please read [CONTRIBUTING.md](https://github.com/zero-to-mastery/CSS_Grid_LearnGame/blob/master/CONTRIBUTING.md) before you make a pull request. 
+
 ## Getting Started
 
 If you want to download and run this website on your computer, you need to install Node.js first because it's built with React.js
@@ -35,17 +37,11 @@ So it will automatically run in your local server.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/zero-to-mastery/CSS_Grid_LearnGame/blob/master/LICENSE) file for details
 
 ## Contributing
 
-1. Fork it (<https://github.com/<yourID>/<ThisprojectName>.git>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
-Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/zero-to-mastery/CSS_Grid_LearnGame/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
 
 ## Acknowledgments
 
@@ -55,3 +51,5 @@ Please read [CONTRIBUTING.md]() for details on our code of conduct, and the proc
 ## Meta
 
 * [ZeroToMaster Web](https://zerotomastery.io/) - The official ZeroToMastery website
+* [HowToContribute](https://github.com/zero-to-mastery/start-here-guidelines) - Open source contribution guideline for all Zero to Master course students
+
