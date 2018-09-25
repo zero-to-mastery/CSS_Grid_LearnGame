@@ -96,11 +96,49 @@
 			margin:0 auto;
 		}
 
-				.control_input{
-					width:80%;
-				}
 
-				.control_submit{
-					display: flex;
-    				justify-content: flex-end;
-				}
+			.control_input{
+				width:80%;
+			}
+
+			.control_submit{
+				display: flex;
+				justify-content: flex-end;
+			}
+
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/*******************Subcomponents CSS***********************/
+/***********************************************************/
+/***********************************************************/
+
+				
+				.control_question {
+					color: white;
+					font-weight: 400;
+					margin: auto;
+					}
+
+					.control_mission {
+					width: 80%;
+					padding: 1rem;
+					margin: 0 auto;
+					text-align: left;
+					word-spacing: 0.2rem;
+					}
+
+					.control_form {
+					background: rgba(0,0,0,0.6);
+					width: 80%;
+					padding: 1rem;
+					margin: 0 auto;
+					text-align: left;
+					word-spacing: 0.2rem;
+					}
+
+					.hint{
+						margin: 0;
+						font-size: 0.7rem;
+					    color: dodgerblue;
+					}

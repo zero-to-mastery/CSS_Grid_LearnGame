@@ -18,7 +18,7 @@ const Board1 = ({fire_spell, level}) => {
 				{/*className "board_fire_basic" => basic style of board under fire*/}
 				{/*className "board_fires + level" => this level's unique style*/}
 			<div className = {"board_fire_basic board_fires" + levelValue} style={fire_spell}>
-				{/*className "fires" => basic fire style*/}
+				{/*className "fires" => basic fire imgae style*/}
 				{/*className "vibrate-1" => fire animaiton*/}
 				<img src={FireR} className="fires vibrate-1" alt="fire"/>
 				<img src={FireB} className="fires vibrate-1" alt="fire"/>
@@ -27,7 +27,7 @@ const Board1 = ({fire_spell, level}) => {
 				{/*className "board_monster_basic" => basic style of board under monster*/}
 				{/*className "board_monsters + level" => this level's unique style*/}
 			<div className = {"board_monster_basic board_monsters" + levelValue}>
-				{/*className "monsters" => basic monster style*/}
+				{/*className "monsters" => basic monster image style*/}
 				{/*className "puff-in-center..." => monster animaiton*/}
 				<img src={DragonR} className="monsters puff-in-center" alt="dragon"/>
 				<img src={DragonB} className="monsters puff-in-center" alt="dragon"/>
