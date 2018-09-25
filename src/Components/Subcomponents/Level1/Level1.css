@@ -1,0 +1,41 @@
+/*board containing all fires*/
+/*you can modify from here*/
+.board_fires1{
+    display: flex;
+}
+
+/*board containing all monsters*/
+/*you can modify from here*/
+.board_monsters1{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.control_question1 {
+color: white;
+font-weight: 400;
+margin: auto;
+}
+
+.control_mission1 {
+width: 80%;
+padding: 1rem;
+margin: 0 auto;
+text-align: left;
+word-spacing: 0.2rem;
+}
+
+.control_form1 {
+background: rgba(0,0,0,0.6);
+width: 80%;
+padding: 1rem;
+margin: 0 auto;
+text-align: left;
+word-spacing: 0.2rem;
+}
+
+.hint1{
+	margin: 0;
+	font-size: 0.7rem;
+    color: dodgerblue;
+}

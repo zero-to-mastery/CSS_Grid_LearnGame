@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+  width: 100%;
+  min-width: 600px;
+  height:100vh;
+}
+
+.title {
+	font-family: 'Press Start 2P', cursive;
+}
+
+.fires{
+	height:9vw;
+}
+
+.monsters{
+	height:9vw;
+}
+
+.header_section{
+	background-color: rgb(44,62,80);
+	padding: 1rem 0;
+	display: flex;
+	color: white;
+	justify-content: space-around;
+	min-width: 600px;
+}
+
+	.header_section_right{
+		display: inline-flex;
+	}
+
+.footer_section{
+	background-color: rgb(44,62,80);
+	padding: 1rem 0;
+	display: flex;
+	color: white;
+	justify-content: space-around;
+	min-width: 600px;
+}
+
+	.footer_section_left{
+
+	}
+
+/*it contains board and control*/
+.main_container{
+  display: inline-flex;
+  width: 100%;
+}
+
+.board_section{
+	border: 2px solid black;
+	border-right: none;
+	width:50%;
+	min-width: 300px;
+	height:100vh;
+	background-color: #5F8C2F;
+}
+
+/*basic setup for board containig fires*/
+.board_fire_basic{
+    width: 49%; /*default = 49%*/
+    height: 100vh; /*default = 100vh*/
+	position: absolute; /*default = absolute*/
+}
+
+/*basic setup for board containig monsters*/
+.board_monster_basic{
+    width: 49%; /*default = 49%*/
+    height: 100vh; /*default = 100vh*/
+	position: absolute; /*default = absolute*/
+}
+
+.control_section{
+	border: 2px solid black;
+	border-right: none;
+	width:50%;
+	min-width: 300px;
+	height:100vh;
+	background-image: url('./img/bg1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+	.control_container{
+		margin-top:2rem;
+		text-align: center;
+	}
+
+		.control_card{
+			background: rgba(0,0,0,0.5);
+			width: 80%;
+			height: 80vh;
+			margin:0 auto;
+		}
+
+				.control_input{
+					width:80%;
+				}
+
+				.control_submit{
+					display: flex;
+    				justify-content: flex-end;
+				}
