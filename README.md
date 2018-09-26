@@ -3,6 +3,8 @@
 
 ![](sample.jpg)
 
+* [Play Here!](https://april9288.github.io/CssGridGame/) - Temporarily deployed address.
+
 It's bascially a froggy-flexbox style game app built with React.js. Currently only 3 stages have been developed. After stage #4 is totally up to you. Be creative! If you want to enjoy this app in your local computer, then download the source and have your computer setup with Node.js. Then you are good to go. If you feel like you want to contribute, then please read [CONTRIBUTING.md](https://github.com/zero-to-mastery/CSS_Grid_LearnGame/blob/master/CONTRIBUTING.md) before you make a pull request. 
 
 ## Getting Started
