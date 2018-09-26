@@ -21,6 +21,7 @@
 	background-color: rgb(44,62,80);
 	padding: 1rem 0;
 	display: flex;
+	align-items: center;
 	color: white;
 	justify-content: space-around;
 	min-width: 600px;
@@ -28,7 +29,30 @@
 
 	.header_section_right{
 		display: inline-flex;
+		align-items: center;
 	}
+
+	.record_btn {
+	    background-color: #008CBA; 
+	    color: white; 
+	    border: 2px solid transparent;
+	    padding: 8px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 1.5vw;
+	    margin: 2px 2px;
+	    -webkit-transition-duration: 0.4s; /* Safari */
+	    transition-duration: 0.4s;
+	    cursor: pointer;
+	}
+
+	.record_btn:hover {
+	    background-color: transparent;
+	    border: 2px solid #008CBA;
+	    color: white;
+	}
+
 
 .footer_section{
 	background-color: rgb(44,62,80);
@@ -91,14 +115,14 @@
 
 		.control_card{
 			background: rgba(0,0,0,0.5);
-			width: 80%;
-			height: 80vh;
+			width: 95%;
+			height: 85vh;
 			margin:0 auto;
 		}
 
 
 			.control_input{
-				width:80%;
+				width:90%;
 			}
 
 			.control_submit{
@@ -121,7 +145,8 @@
 					}
 
 					.control_mission {
-					width: 80%;
+					font-size: 1.2vw;
+					width: 95%;
 					padding: 1rem;
 					margin: 0 auto;
 					text-align: left;
@@ -129,8 +154,8 @@
 					}
 
 					.control_form {
-					background: rgba(0,0,0,0.6);
-					width: 80%;
+					font-size: 1.2vw;
+					width: 90%;
 					padding: 1rem;
 					margin: 0 auto;
 					text-align: left;
@@ -138,7 +163,7 @@
 					}
 
 					.hint{
-						margin: 0;
-						font-size: 0.7rem;
-					    color: dodgerblue;
+					margin: 0;
+					
+				    color: dodgerblue;
 					}

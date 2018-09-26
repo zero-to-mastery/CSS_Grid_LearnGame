@@ -8,7 +8,7 @@ const Control1 = ({spell_input, spell_submit, level}) => {
 	const solutionNum = "solution" + levelValue;
 
 	return (
-		<section style={{width:"99%"}}>
+		<section>
 
 			<div className = "control_question">
 				<div className = "control_mission">
@@ -23,12 +23,12 @@ const Control1 = ({spell_input, spell_submit, level}) => {
 							<textarea className = "control_input" type = "input" onChange={spell_input} autoFocus={true} required={true}/>
 							<p>&#125;</p>
 							<div className = "control_submit">
-								<button onClick={()=>spell_submit(solutionNum)}>Next</button>
+								<button className="record_btn" onClick={()=>spell_submit(solutionNum)}>Next</button>
 							</div>
 						</section>
 				</div>
-
 			</div>
+			
 		</section>
 		);
 }
