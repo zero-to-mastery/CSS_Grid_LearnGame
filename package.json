@@ -1,8 +1,8 @@
 {
-  "name": "CssGridGame",
+  "name": "CSS_Grid_LearnGame",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://april9288.github.io/CssGridGame/",
+  "homepage": "https://zero-to-mastery.github.io/CSS_Grid_LearnGame/",
   "dependencies": {
     "ajv": "^6.5.4",
     "gh-pages": "^2.0.0",
