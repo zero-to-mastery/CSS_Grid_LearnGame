@@ -7,7 +7,7 @@ const ControlComplete = () => {
 
 			<div className = "control_question0">
 				<div className = "control_mission0">
-				  	<h1>You've complted this mission! Hero! You saved a lot of people in this town!!!</h1>
+				  	<h1>You've completed this mission! Hero! You saved a lot of people in this town!!!</h1>
 				  	<h2>Here's ZTM CSS Grid Master Certificate!</h2>
 				</div>
 			</div>

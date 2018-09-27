@@ -15,7 +15,7 @@ const Control1 = ({spell_input, spell_submit, level}) => {
 				  	<p>Our small ZTM town is now being attacked by the Dragons!!! We need your help. Hero! There are three types of dragons; red, blue and yellow. To slay that dragons, we need to spell fire that matches their color. Please help us now!</p>
 				</div>
 				<div className = "control_form">
-					<p className = "hint">To fire at the end of the field, do this. justify-content : flex-end</p>
+					<p className = "hint">To fire at the end of the field, do this. <mark style={{backgroundColor : "blue", color: "white"}}>justify-content : flex-end;</mark></p>
 					<p className = "hint">Don't forget to finish your spell with semicolon &#59; </p>
 						<p>#fire_spell &#123;</p>
 						<p>display: flex;</p>
