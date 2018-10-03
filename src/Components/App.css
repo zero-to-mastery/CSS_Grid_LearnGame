@@ -60,11 +60,18 @@
 	display: flex;
 	color: white;
 	justify-content: space-around;
+	align-items: center;
 	min-width: 600px;
 }
 
 	.footer_section_left{
 
+	}
+
+
+	.footer_links{
+		text-decoration: none;
+		color: white;
 	}
 
 /*it contains board and control*/
