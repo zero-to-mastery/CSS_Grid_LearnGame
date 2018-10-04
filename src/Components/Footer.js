@@ -8,7 +8,7 @@ const Footer = () => {
 			<img style = {{borderRadius:10}} src={ZTM_Logo} alt="Zero To Mastery Community" height={100} />
  		  </div>
  		  <div>
- 		  	<p style={{fontSize : "1.2rem", margin: 0}}>Zero To Mastery Community </p>
+ 		  	<p style={{fontSize : "1.2rem", margin: 0, color: "goldenrod"}}>Zero To Mastery Community </p>
 
 		 		  	<div style={{margin: "1.2rem 0"}}>
 		 		  		<a className = "footer_links" href="https://zerotomastery.io/">Community Website</a>
