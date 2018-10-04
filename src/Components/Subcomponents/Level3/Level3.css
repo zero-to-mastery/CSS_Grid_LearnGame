@@ -6,7 +6,6 @@
 /*board containing all monsters*/
 .board_monsters3{
     display: flex; /*default value => flex*/
-	align-items:center;
-	justify-content: flex-end;
+  	align-items: center;
+  	justify-content: flex-end;
 }
-

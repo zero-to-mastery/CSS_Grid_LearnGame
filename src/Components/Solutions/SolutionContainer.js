@@ -8,6 +8,8 @@ export const SolutionContainer = (solutionNum) => {
 				return {justifyContent:"space-around"}
 		case "solution3":
 				return {alignItems:"center", justifyContent:"flex-end"}
+		case "solution4":
+				return {alignItems:"flex-end", flexDirection:"row-reverse"}
 		default:
 			return "Nothing"
 	}
