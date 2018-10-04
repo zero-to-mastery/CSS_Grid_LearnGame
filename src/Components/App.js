@@ -44,7 +44,7 @@ class App extends Component {
       let current_score = this.state.score;
       current_level += 1;
       current_score += 100;
-      this.setState({level : current_level, score : current_score});
+      this.setState({level : current_level, score : current_score, fire_spell : {}});
       console.log("submitted, correct answer!")
     }
     else {
@@ -55,19 +55,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      	<Header 
+      	<Header
           level={this.state.level}
           score={this.state.score}/>
 
         	  <MainContainer>
 
-      	      	<Control 
-                spell_input={this.spell_input} 
-                spell_submit={this.spell_submit} 
+      	      	<Control
+                spell_input={this.spell_input}
+                spell_submit={this.spell_submit}
                 level={this.state.level}/>
 
-      	      	<Board 
-                fire_spell={this.state.fire_spell} 
+      	      	<Board
+                fire_spell={this.state.fire_spell}
                 level={this.state.level}/>
 
   	      </MainContainer>

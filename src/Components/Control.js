@@ -2,6 +2,7 @@ import React from 'react';
 import Control1 from './Subcomponents/Level1/Control1';
 import Control2 from './Subcomponents/Level2/Control2';
 import Control3 from './Subcomponents/Level3/Control3';
+import Control4 from './Subcomponents/Level4/Control4';
 import ControlComplete from './MissionComplete/ControlComplete';
 
 const Route = (spell_input, spell_submit, level) => {
@@ -12,10 +13,12 @@ const Route = (spell_input, spell_submit, level) => {
 			return <Control2 spell_input={spell_input} spell_submit={spell_submit} level={level}/>
 		case 3:
 			return <Control3 spell_input={spell_input} spell_submit={spell_submit} level={level}/>
+		case 4:
+			return <Control4 spell_input={spell_input} spell_submit={spell_submit} level={level}/>
 		default:
 			return <ControlComplete />;
 	}
-} 
+}
 
 const Control = ({spell_input, spell_submit, level}) => {
 	return (
@@ -26,7 +29,7 @@ const Control = ({spell_input, spell_submit, level}) => {
 				<div className = "control_card">
 
 				{
-					Route(spell_input, spell_submit, level) 
+					Route(spell_input, spell_submit, level)
 				}
 
 				</div>
@@ -36,4 +39,3 @@ const Control = ({spell_input, spell_submit, level}) => {
 }
 
 export default Control;
-

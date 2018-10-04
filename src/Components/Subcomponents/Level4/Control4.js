@@ -1,7 +1,7 @@
 import React from 'react';
-import './Level3.css';
+import './Level4.css';
 
-const Control3 = ({spell_input, spell_submit, level}) => {
+const Control4 = ({spell_input, spell_submit, level}) => {
 
 	//to make classnames dynamic to the level value.
 	const levelValue = String(level);
@@ -18,11 +18,10 @@ const Control3 = ({spell_input, spell_submit, level}) => {
 					<p className = "hint">It seems you need to spell mutiple times(2 lines)</p>
 					<p className = "hint">Here's another list of spells</p>
 					<ol style={{fontSize: "0.9rem"}}>
-						<li>align-items : flex-start</li>
-						<li>align-items : flex-end</li>
-						<li>align-items : center</li>
-						<li>align-items : baseline</li>
-						<li>align-items : stretch</li>
+						<li>flex-direction : row</li>
+						<li>flex-direction : row-reverse</li>
+						<li>flex-direction : column</li>
+						<li>flex-direction : column-reverse</li>
 					</ol>
 					<p className = "hint">Don't forget to finish with semicolon &#59; </p>
 						<p>#fire_spell &#123;</p>
@@ -41,4 +40,4 @@ const Control3 = ({spell_input, spell_submit, level}) => {
 		);
 }
 
-export default Control3;
+export default Control4;
