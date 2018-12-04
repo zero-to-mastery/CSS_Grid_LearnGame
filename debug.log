@@ -1,1 +1,4 @@
 [0924/135203.859:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1204/220852.347:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1204/224620.646:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1204/224726.213:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: The pipe has been ended. (0x6D)
