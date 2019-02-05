@@ -2,6 +2,7 @@ import React from 'react';
 import './Level0.css';
 
 const BoardComplete = () => {
+	const mm = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 	return (
 		<section style={{width:"99%"}}>
 			<div className = "certificate">
@@ -18,7 +19,7 @@ const BoardComplete = () => {
 				       <span style={{fontSize:15}}><i>has completed the course</i></span> <br/><br/>
 				       <span style={{fontSize:10}}>ZTM CSS Grid Master</span> <br/><br/>
 				       <span style={{fontSize:10}}>with score of <b>1000 points</b></span> <br/><br/><br/><br/>
-				       <span style={{fontSize:15}}><i>dated Sep 24 2018</i></span><br/> 
+				       <span style={{fontSize:15}}><i>dated {mm[(new Date()).getMonth()] + ' ' + (new Date()).getDay() + ' ' + (new Date()).getFullYear()}</i></span><br/> 
 					</div>
 				</div>
 			</div>
