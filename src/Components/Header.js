@@ -20,7 +20,7 @@ const Header = ({level, score}) => {
 
 		</section>
 		);
-}
+};
 
 export default Header;
 

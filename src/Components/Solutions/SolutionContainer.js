@@ -3,14 +3,14 @@
 export const SolutionContainer = (solutionNum) => {
 	switch(solutionNum) {
 		case "solution1":
-				return {justifyContent:"flex-end"}
+				return {justifyContent:"flex-end"};
 		case "solution2":
-				return {justifyContent:"space-around"}
+				return {justifyContent:"space-around"};
 		case "solution3":
-				return {alignItems:"center", justifyContent:"flex-end"}
+				return {alignItems:"center", justifyContent:"flex-end"};
 		case "solution4":
-				return {alignItems:"flex-end", flexDirection:"row-reverse"}
+				return {alignItems:"flex-end", flexDirection:"row-reverse"};
 		default:
 			return "Nothing"
 	}
-}
+};

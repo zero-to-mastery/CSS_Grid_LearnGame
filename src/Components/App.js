@@ -17,22 +17,26 @@ class App extends Component {
   constructor() {
       super();
       this.state = {
-        level: 1, //default value is 1. 0 is for the last (certificate)
+        level: 1, //default value is 1. 0 is for the last (certifiControlCompletecate)
         score: 0, //it starts from 0. And +100 per one level up
         fire_spell: {}, //this is input that users type on <input />
-      }
+        isFormSubmitted: false,
+        name: '',
+        email: ''
+      };
       this.spell_input = this.spell_input.bind(this);
       this.spell_submit = this.spell_submit.bind(this);
-    }
 
-  //spell input is updated to the state and re-render the componenets
+  }
+
+  //spell input is updated to the state and re-render the components
   spell_input = (event) => {
     let inputSpell = event.target.value;
     let parsedSpell = SpellParsing(inputSpell);
     this.setState({fire_spell : parsedSpell});
   };
 
-  //when a user submits, then this fucntion runs.
+  //when a user submits, then this function runs.
   //first it checks what level the user is and matches with the solution.
   //if it matches, then the user gets 100 scores and goes to the next level.
   spell_submit = (solutionNum) => {
@@ -50,25 +54,33 @@ class App extends Component {
     else {
       console.log("submitted, but wrong answer!")
     }
-  }
+  };
+
+  formSubmit = (name, email) => {
+    this.setState({isFormSubmitted: true, name, email})
+  };
 
   render() {
+    const {level, score, fire_spell, name, email, isFormSubmitted} = this.state;
     return (
       <div className="App">
       	<Header
-          level={this.state.level}
-          score={this.state.score}/>
+          level={level}
+          score={score}/>
 
         	  <MainContainer>
 
       	      	<Control
                 spell_input={this.spell_input}
                 spell_submit={this.spell_submit}
-                level={this.state.level}/>
+                level={level}
+                formSubmit={this.formSubmit}
+                isFormSubmitted={isFormSubmitted}/>
 
       	      	<Board
-                fire_spell={this.state.fire_spell}
-                level={this.state.level}/>
+                fire_spell={fire_spell}
+                level={level}
+                userCredentials={{name, email}}/>
 
   	      </MainContainer>
 

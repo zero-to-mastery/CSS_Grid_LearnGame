@@ -6,6 +6,7 @@ const Control1 = ({spell_input, spell_submit, level}) => {
 	//to make classnames dynamic to the level value. 
 	const levelValue = String(level);
 	const solutionNum = "solution" + levelValue;
+	console.log(spell_submit);
 
 	return (
 		<section>
@@ -31,6 +32,6 @@ const Control1 = ({spell_input, spell_submit, level}) => {
 			
 		</section>
 		);
-}
+};
 
 export default Control1;

@@ -38,6 +38,6 @@ const Control2 = ({spell_input, spell_submit, level}) => {
 			</div>
 		</section>
 		);
-}
+};
 
 export default Control2;
