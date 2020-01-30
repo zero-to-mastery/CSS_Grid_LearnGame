@@ -12,7 +12,7 @@ const Control3 = ({spell_input, spell_submit, level}) => {
 
 			<div className = "control_question">
 				<div className = "control_mission">
-				  	<p></p>
+				  	<p>&nbsp;</p>
 				</div>
 				<div className = "control_form">
 					<p className = "hint">It seems you need to spell mutiple times(2 lines)</p>
@@ -39,6 +39,6 @@ const Control3 = ({spell_input, spell_submit, level}) => {
 			</div>
 		</section>
 		);
-}
+};
 
 export default Control3;

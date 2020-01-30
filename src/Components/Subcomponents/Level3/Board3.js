@@ -27,6 +27,6 @@ const Board3 = ({fire_spell, level}) => {
 
 		</section>
 		);
-}
+};
 
 export default Board3;

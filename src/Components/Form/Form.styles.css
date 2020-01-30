@@ -1,0 +1,13 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+
+.form__input {
+    margin-bottom: 30px;
+    padding: 1rem;
+    border: 1px solid gray;
+    font-size: 18px;
+    font-family: inherit;
+}
