@@ -1,13 +1,13 @@
 import React from 'react';
-import './Level1.css';
+import './Level1_marked-to-delete.css';
 
-import DragonR from '../../img/dragon_red.png';
-import DragonB from '../../img/dragon_blue.png';
+import DragonR from '../../../assets/img/dragon_red.png';
+import DragonB from '../../../assets/img/dragon_blue.png';
 
-import FireR from '../../img/fire_red.png';
-import FireB from '../../img/fire_blue.png';
+import FireR from '../../../assets/img/fire_red.png';
+import FireB from '../../../assets/img/fire_blue.png';
 
-const Board1 = ({fire_spell, level}) => {
+const Board1_markedToDelete = ({fire_spell, level}) => {
 
 	//to make classnames dynamic to the level value. 
 	const levelValue = String(level);
@@ -37,4 +37,4 @@ const Board1 = ({fire_spell, level}) => {
 		);
 };
 
-export default Board1;
+export default Board1_markedToDelete;

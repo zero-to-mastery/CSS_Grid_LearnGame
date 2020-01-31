@@ -1,0 +1,31 @@
+/*board containing all fires*/
+.board_fires{
+    display: flex; /*default value => flex*/
+}
+
+/*board containing all monsters*/
+.board_monsters1{
+    display: flex; /*default value => flex*/
+    justify-content: flex-end; /*You can edit it*/
+}
+/*board containing all monsters*/
+.board_monsters2{
+    display: flex; /*default value => flex*/
+    justify-content: space-around; /*You can edit it*/
+}
+
+/*board containing all monsters*/
+.board_monsters3{
+    display: flex; /*default value => flex*/
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*board containing all monsters*/
+.board_monsters4{
+    display: flex; /*default value => flex*/
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+/*INSERT STYLES OF NEW LEVELS HERE*/

@@ -1,7 +1,11 @@
 import React from 'react';
 import './Level0.css';
+import { connect } from 'react-redux';
+import {createStructuredSelector} from "reselect";
+import {selectUserCredentials} from "../../redux/user/user.selectors";
 
 const mm = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
 const showCertificate = (name, email) => (
 	<section style={{width:"99%"}}>
 		<div className = "certificate">
@@ -19,7 +23,7 @@ const showCertificate = (name, email) => (
 					<span style={{fontSize:15}}><i>has completed the course</i></span> <br/><br/>
 					<span style={{fontSize:10}}>ZTM CSS Grid Master</span> <br/><br/>
 					<span style={{fontSize:10}}>with score of <b>1000 points</b></span> <br/><br/><br/><br/>
-					<span style={{fontSize:15}}><i>dated {mm[(new Date()).getMonth()] + ' ' + (new Date()).getDay() + ' ' + (new Date()).getFullYear()}</i></span><br/>
+					<span style={{fontSize:15}}><i>dated {mm[(new Date()).getMonth()] + ' ' + (new Date()).getDate() + ' ' + (new Date()).getFullYear()}</i></span><br/> {/* .getDay() doesn't return correct day */}
 				</div>
 			</div>
 		</div>
@@ -43,5 +47,9 @@ const BoardComplete = ({userCredentials}) => {
 	);
 };
 
-export default BoardComplete;
+const mapStateToProps = createStructuredSelector({
+	userCredentials: selectUserCredentials
+});
+
+export default connect(mapStateToProps)(BoardComplete);
 

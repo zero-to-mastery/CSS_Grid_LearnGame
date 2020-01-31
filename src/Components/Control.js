@@ -5,7 +5,7 @@ import Control3 from './Subcomponents/Level3/Control3';
 import Control4 from './Subcomponents/Level4/Control4';
 import ControlComplete from './MissionComplete/ControlComplete';
 
-const Route = (spell_input, spell_submit, level, formSubmit, isFormSubmitted) => {
+const Route = (spell_input, spell_submit, level) => {
 	switch(level) {
 		case 1:
 			return <Control1 spell_input={spell_input} spell_submit={spell_submit} level={level}/>;
@@ -16,11 +16,11 @@ const Route = (spell_input, spell_submit, level, formSubmit, isFormSubmitted) =>
 		case 4:
 			return <Control4 spell_input={spell_input} spell_submit={spell_submit} level={level}/>;
 		default:
-			return <ControlComplete formSubmit={formSubmit} isFormSubmitted={isFormSubmitted}/>;
+			return <ControlComplete />;
 	}
 };
 
-const Control = ({spell_input, spell_submit, level, formSubmit, isFormSubmitted}) => {
+const Control = ({spell_input, spell_submit, level}) => {
 	return (
 		<section className = "control_section">
 			<div className = "control_container">
@@ -29,7 +29,7 @@ const Control = ({spell_input, spell_submit, level, formSubmit, isFormSubmitted}
 				<div className = "control_card">
 
 				{
-					Route(spell_input, spell_submit, level, formSubmit, isFormSubmitted)
+					Route(spell_input, spell_submit, level)
 				}
 
 				</div>
