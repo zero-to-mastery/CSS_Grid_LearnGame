@@ -52,6 +52,6 @@ Please read [CONTRIBUTING.md](https://github.com/zero-to-mastery/CSS_Grid_LearnG
 
 ## Meta
 
-* [ZeroToMaster Web](https://zerotomastery.io/) - The official ZeroToMastery website
+* [ZeroToMaster Web](https://zerotomastery.io/utm_source=github&utm_medium=CSS_Grid_LearnGame) - The official ZeroToMastery website
 * [HowToContribute](https://github.com/zero-to-mastery/start-here-guidelines) - Open source contribution guideline for all Zero to Master course students
 
