@@ -1,31 +1,47 @@
 import React from 'react';
-import Board1 from './Subcomponents/Level1/Board1';
-import Board2 from './Subcomponents/Level2/Board2';
-import Board3 from './Subcomponents/Level3/Board3';
-import Board4 from './Subcomponents/Level4/Board4';
 import BoardComplete from './MissionComplete/BoardComplete';
 
-const Route = (fire_spell, level, userCredentials) => {
-	switch(level) {
-		case 1:
-			return <Board1 fire_spell={fire_spell} level={level}/>;
-		case 2:
-			return <Board2 fire_spell={fire_spell} level={level}/>;
-		case 3:
-			return <Board3 fire_spell={fire_spell} level={level}/>;
-		case 4:
-			return <Board4 fire_spell={fire_spell} level={level}/>;
-		default:
-			return <BoardComplete userCredentials={userCredentials}/>
-	}
-}
+import DragonR from '../assets/img/dragon_red.png';
+import DragonB from '../assets/img/dragon_blue.png';
+import DragonY from '../assets/img/dragon_yellow.png';
 
-const Board = ({fire_spell, level, userCredentials}) => {
+import FireR from '../assets/img/fire_red.png';
+import FireB from '../assets/img/fire_blue.png';
+import FireY from '../assets/img/fire_yellow.png';
+import BoardTemplate from "./Board-Template/Board-Template.component";
+
+const dragonImages = {red: DragonR, blue: DragonB, yellow: DragonY};
+const fireImages = {red: FireR, blue: FireB, yellow: FireY};
+
+const Route = (fire_spell, level) => {
+	switch(level) {
+		case 1: //add styles of each level to Board-Template.styles.css //Board subComponents and their css are now obsolete and will be deleted soon
+			return <BoardTemplate level={level} fire_spell={fire_spell}
+								  dragonImages={[dragonImages.red, dragonImages.blue]} //images need to be in an array because BoardTemplate's gonna loop them through
+								  fireImages={[fireImages.red, fireImages.blue]} />;
+		case 2:
+			return <BoardTemplate level={level} fire_spell={fire_spell}
+								  dragonImages={[dragonImages.blue, dragonImages.yellow]}
+								  fireImages={[fireImages.blue, fireImages.yellow]}/>;
+		case 3:
+			return <BoardTemplate level={level} fire_spell={fire_spell}
+								  dragonImages={[dragonImages.red, dragonImages.yellow]}
+								  fireImages={[fireImages.red, fireImages.yellow]}/>;
+		case 4:
+			return <BoardTemplate level={level} fire_spell={fire_spell}
+								  dragonImages={[dragonImages.blue, dragonImages.red]}
+								  fireImages={[fireImages.blue, fireImages.red]}/>;
+		default:
+			return <BoardComplete/>
+	}
+};
+
+const Board = ({fire_spell, level}) => {
 
 	return (
 		<section className = "board_section">
 			{
-				Route(fire_spell, level, userCredentials)
+				Route(fire_spell, level)
 			}
 		</section>
 		);

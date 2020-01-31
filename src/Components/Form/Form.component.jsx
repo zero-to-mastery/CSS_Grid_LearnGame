@@ -1,6 +1,9 @@
 import React from 'react';
 import './Form.styles.css';
 
+import { connect } from 'react-redux';
+import { SubmitForm } from "../../redux/user/user.actions";
+
 class Form extends React.Component{
         constructor(props) {
                 super(props);
@@ -18,7 +21,8 @@ class Form extends React.Component{
         handleSubmit = event => {
                 event.preventDefault();
                 const {name, email } = this.state;
-                this.props.formSubmit(name, email)
+
+                this.props.SubmitForm({name, email})
         };
         render() {
                 return (
@@ -31,4 +35,8 @@ class Form extends React.Component{
         }
 }
 
-export default Form;
+const mapDispatchToProps = dispatch => ({
+        SubmitForm: userCredentials => dispatch(SubmitForm(userCredentials))
+});
+
+export default connect(null, mapDispatchToProps)(Form); //connect is higher order component

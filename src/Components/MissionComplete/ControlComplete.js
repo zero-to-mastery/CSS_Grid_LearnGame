@@ -2,7 +2,11 @@ import React from 'react';
 import './Level0.css';
 import Form from "../Form/Form.component";
 
-const ControlComplete = ({formSubmit, isFormSubmitted}) => {
+import { createStructuredSelector } from "reselect";
+import { connect } from 'react-redux';
+import {selectIsFormSubmitted} from "../../redux/user/user.selectors";
+
+const ControlComplete = ({isFormSubmitted}) => {
 	return (
 		<section style={{width:"99%"}}>
 
@@ -14,7 +18,7 @@ const ControlComplete = ({formSubmit, isFormSubmitted}) => {
 						<h2>Here's Your ZTM CSS Grid Master Certificate!</h2>
 						:
 						<span><h2>Please fill the form to get your ZTM CSS Grid Master Certificate!</h2>
-						<Form formSubmit={formSubmit}/></span>
+						<Form/></span>
 				  	}
 				</div>
 			</div>
@@ -22,4 +26,8 @@ const ControlComplete = ({formSubmit, isFormSubmitted}) => {
 		);
 };
 
-export default ControlComplete;
+const mapStateToProps = createStructuredSelector({
+	isFormSubmitted: selectIsFormSubmitted
+});
+
+export default connect(mapStateToProps)(ControlComplete);

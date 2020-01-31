@@ -1,7 +1,11 @@
 import React from 'react';
 import './Level0.css';
+import { connect } from 'react-redux';
+import {createStructuredSelector} from "reselect";
+import {selectUserCredentials} from "../../redux/user/user.selectors";
 
 const mm = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
 const showCertificate = (name, email) => (
 	<section style={{width:"99%"}}>
 		<div className = "certificate">
@@ -43,5 +47,9 @@ const BoardComplete = ({userCredentials}) => {
 	);
 };
 
-export default BoardComplete;
+const mapStateToProps = createStructuredSelector({
+	userCredentials: selectUserCredentials
+});
+
+export default connect(mapStateToProps)(BoardComplete);
 

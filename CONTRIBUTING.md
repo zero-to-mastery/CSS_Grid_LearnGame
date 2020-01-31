@@ -113,14 +113,14 @@ So it's like copy and paste. And change the numbers from 3 to 4. That's it.
 
 Go to `src > Components > Board.js`. Board.js contains all the views on the right. It contains the square board, fires and the Dragons. It's pretty much the same with the step 2.
 
-Add it after `import Board3 ... `
+Add it after `import Board3_markedToDelete ... `
 ```javascript
-import Board4 from './Subcomponents/Level4/Board4';
+import Board4_markedToDelete from './Subcomponents/Level4/Board4_markedToDelete';
 ```
 then add it at the end of Route fuction.
 ```javascript
 case 4:
-	return <Board4 fire_spell={fire_spell} level={level}/>
+	return <Board4_markedToDelete fire_spell={fire_spell} level={level}/>
 ```
 
 Okay. Let's move on to the next step. 
@@ -131,13 +131,13 @@ You should create a folder `Level4` under this path. `src > Components > Subcomp
 So the list of files will look like this.
 
 ```
-Board4.js
+Board4_marked-to-delete.js
 Control4.js
 Level4.css
 ```
 
 Each file contains unique view for the stage 4. You need to edit only one line of code for each!!! One line. 
-On Board4.js & Control4.js, just edit it `import './Level3.css'` to `import './Level4.css'`. 
+On Board4_marked-to-delete.js & Control4.js, just edit it `import './Level3.css'` to `import './Level4.css'`. 
 
 ### Step5
 
@@ -173,7 +173,7 @@ You like it? then make your pull request!!!
 
 ### Additional step
 
-- Okay. You want to change the colors of fires and monsters? Go to `Board4.js`. We have three types of fires and dragons. You can simply change the imported image, and then the view of your stage will be changed.
+- Okay. You want to change the colors of fires and monsters? Go to `Board4_markedToDelete.js`. We have three types of fires and dragons. You can simply change the imported image, and then the view of your stage will be changed.
 
 Choose what you want from this snippet below.
 
