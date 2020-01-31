@@ -1,5 +1,5 @@
 import React from 'react';
-import ZTM_Logo from './img/ZTM.jpg'
+import ZTM_Logo from '../assets/img/ZTM.jpg'
 
 const Header = ({level, score}) => {
 	return (

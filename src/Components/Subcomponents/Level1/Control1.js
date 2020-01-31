@@ -1,12 +1,11 @@
 import React from 'react';
-import './Level1.css';
+import './Level1_marked-to-delete.css';
 
 const Control1 = ({spell_input, spell_submit, level}) => {
 
 	//to make classnames dynamic to the level value. 
 	const levelValue = String(level);
 	const solutionNum = "solution" + levelValue;
-	console.log(spell_submit);
 
 	return (
 		<section>

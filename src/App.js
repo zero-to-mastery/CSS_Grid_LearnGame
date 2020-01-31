@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import MainContainer from './MainContainer';
-import Control from './Control';
-import Board from './Board';
-import Footer from './Footer';
+import Header from './Components/Header';
+import MainContainer from './Components/MainContainer';
+import Control from './Components/Control';
+import Board from './Components/Board';
+import Footer from './Components/Footer';
 import './App.css';
 import _ from 'lodash';
 
 //a function changing user input to React version css
-import { SpellParsing } from './SpellParsing/SpellParsing';
+import { SpellParsing } from './Components/SpellParsing/SpellParsing';
 //a function comparing user input with the solution
-import { SolutionContainer } from './Solutions/SolutionContainer';
+import { SolutionContainer } from './Components/Solutions/SolutionContainer';
 
 
 class App extends Component {
@@ -20,13 +20,7 @@ class App extends Component {
         level: 1, //default value is 1. 0 is for the last (certifiControlCompletecate)
         score: 0, //it starts from 0. And +100 per one level up
         fire_spell: {}, //this is input that users type on <input />
-        isFormSubmitted: false,
-        name: '',
-        email: ''
       };
-      this.spell_input = this.spell_input.bind(this);
-      this.spell_submit = this.spell_submit.bind(this);
-
   }
 
   //spell input is updated to the state and re-render the components
@@ -56,12 +50,8 @@ class App extends Component {
     }
   };
 
-  formSubmit = (name, email) => {
-    this.setState({isFormSubmitted: true, name, email})
-  };
-
   render() {
-    const {level, score, fire_spell, name, email, isFormSubmitted} = this.state;
+    const {level, score, fire_spell} = this.state;
     return (
       <div className="App">
       	<Header
@@ -73,14 +63,11 @@ class App extends Component {
       	      	<Control
                 spell_input={this.spell_input}
                 spell_submit={this.spell_submit}
-                level={level}
-                formSubmit={this.formSubmit}
-                isFormSubmitted={isFormSubmitted}/>
+                level={level}/>
 
       	      	<Board
                 fire_spell={fire_spell}
-                level={level}
-                userCredentials={{name, email}}/>
+                level={level}/>
 
   	      </MainContainer>
 

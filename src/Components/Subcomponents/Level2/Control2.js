@@ -1,5 +1,5 @@
 import React from 'react';
-import './Level2.css';
+import './Level2_marked-to-delete.css';
 
 const Control2 = ({spell_input, spell_submit, level}) => {
 
