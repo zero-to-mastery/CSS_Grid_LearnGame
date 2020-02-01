@@ -192,3 +192,10 @@ import FireB from '../../img/fire_blue.png';
 I think that's all for the guideline `How to build next stage`! Before you make a pull request, please make sure that if someone already developed `stage #4` in the ZTM master repository. In that case, you should sync first and then change the name of your stage, at #5 or accordingly. 
 
 If you have anyquestion, please leave a comment on Discord channel #group-project. 
+
+
+
+
+
+
+hey i am kartik beginner dont mind this change
