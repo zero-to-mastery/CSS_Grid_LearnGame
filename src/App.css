@@ -9,70 +9,30 @@
 	font-family: 'Press Start 2P', cursive;
 }
 
-.fires{
-	height:9vw;
-}
-
 .monsters{
 	height:9vw;
 }
 
-.header_section{
-	background-color: rgb(44,62,80);
-	padding: 1rem 0;
-	display: flex;
-	align-items: center;
+.record_btn {
+	background-color: #008CBA;
 	color: white;
-	justify-content: space-around;
-	min-width: 600px;
+	border: 2px solid transparent;
+	padding: 8px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.5vw;
+	margin: 2px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
 }
 
-	.header_section_right{
-		display: inline-flex;
-		align-items: center;
-	}
-
-	.record_btn {
-	    background-color: #008CBA; 
-	    color: white; 
-	    border: 2px solid transparent;
-	    padding: 8px 32px;
-	    text-align: center;
-	    text-decoration: none;
-	    display: inline-block;
-	    font-size: 1.5vw;
-	    margin: 2px 2px;
-	    -webkit-transition-duration: 0.4s; /* Safari */
-	    transition-duration: 0.4s;
-	    cursor: pointer;
-	}
-
-	.record_btn:hover {
-	    background-color: transparent;
-	    border: 2px solid #008CBA;
-	    color: white;
-	}
-
-
-.footer_section{
-	background-color: rgb(44,62,80);
-	padding: 1rem 0;
-	display: flex;
+.record_btn:hover {
+	background-color: transparent;
+	border: 2px solid #008CBA;
 	color: white;
-	justify-content: space-around;
-	align-items: center;
-	min-width: 600px;
 }
-
-	.footer_section_left{
-
-	}
-
-
-	.footer_links{
-		text-decoration: none;
-		color: white;
-	}
 
 /*it contains board and control*/
 .main_container{
@@ -87,20 +47,6 @@
 	min-width: 300px;
 	height:100vh;
 	background-color: #5F8C2F;
-}
-
-/*basic setup for board containig fires*/
-.board_fire_basic{
-    width: 49%; /*default = 49%*/
-    height: 100vh; /*default = 100vh*/
-	position: absolute; /*default = absolute*/
-}
-
-/*basic setup for board containig monsters*/
-.board_monster_basic{
-    width: 49%; /*default = 49%*/
-    height: 100vh; /*default = 100vh*/
-	position: absolute; /*default = absolute*/
 }
 
 .control_section{
@@ -127,50 +73,9 @@
 			margin:0 auto;
 		}
 
-
-			.control_input{
-				width:90%;
-			}
-
-			.control_submit{
-				display: flex;
-				justify-content: flex-end;
-			}
-
 /***********************************************************/
 /***********************************************************/
 /***********************************************************/
 /*******************Subcomponents CSS***********************/
 /***********************************************************/
 /***********************************************************/
-
-				
-				.control_question {
-					color: white;
-					font-weight: 400;
-					margin: auto;
-					}
-
-					.control_mission {
-					font-size: 1.2vw;
-					width: 95%;
-					padding: 1rem;
-					margin: 0 auto;
-					text-align: left;
-					word-spacing: 0.2rem;
-					}
-
-					.control_form {
-					font-size: 1.2vw;
-					width: 90%;
-					padding: 1rem;
-					margin: 0 auto;
-					text-align: left;
-					word-spacing: 0.2rem;
-					}
-
-					.hint{
-					margin: 0;
-					
-				    color: dodgerblue;
-					}

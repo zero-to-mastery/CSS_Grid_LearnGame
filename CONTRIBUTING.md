@@ -14,7 +14,7 @@ You could contribute whatever you want. But finishing `React Robofriends Section
 If you've already finished `React Robofriends Section`, then you could do these lists on below.
 
 ```
-1.Footer Component // Need to design. It's empty now.
+1.FooterComponent Component // Need to design. It's empty now.
 
 2.Next Stage Development!!! It's gonna be very very fun! 
 All detail about this can be found the end of this page. 

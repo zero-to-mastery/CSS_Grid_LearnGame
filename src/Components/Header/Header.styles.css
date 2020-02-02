@@ -1,0 +1,14 @@
+.header_section{
+    background-color: rgb(44,62,80);
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    min-width: 600px;
+}
+
+.header_section_right{
+    display: inline-flex;
+    align-items: center;
+}

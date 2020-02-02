@@ -4,15 +4,16 @@
   "private": true,
   "homepage": "https://april9288.github.io/CssGridGame/",
   "dependencies": {
-    "ajv": "^6.7.0",
-    "gh-pages": "^2.0.1",
+    "ajv": "^6.11.0",
+    "gh-pages": "^2.2.0",
     "lodash": "^4.17.15",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-redux": "^7.1.3",
-    "react-scripts": "^2.1.3",
+    "react-scripts": "^3.3.1",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0"
   },
   "scripts": {
