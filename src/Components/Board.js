@@ -13,22 +13,22 @@ import BoardTemplate from "./Board-Template/Board-Template.component";
 const dragonImages = {red: DragonR, blue: DragonB, yellow: DragonY};
 const fireImages = {red: FireR, blue: FireB, yellow: FireY};
 
-const Route = (fire_spell, level) => {
+const Route = ( level) => {
 	switch(level) {
 		case 1: //add styles of each level to Board-Template.styles.css //Board subComponents and their css are now obsolete and will be deleted soon
-			return <BoardTemplate level={level} fire_spell={fire_spell}
+			return <BoardTemplate level={level}
 								  dragonImages={[dragonImages.red, dragonImages.blue]} //images need to be in an array because BoardTemplate's gonna loop them through
 								  fireImages={[fireImages.red, fireImages.blue]} />;
 		case 2:
-			return <BoardTemplate level={level} fire_spell={fire_spell}
+			return <BoardTemplate level={level}
 								  dragonImages={[dragonImages.blue, dragonImages.yellow]}
 								  fireImages={[fireImages.blue, fireImages.yellow]}/>;
 		case 3:
-			return <BoardTemplate level={level} fire_spell={fire_spell}
+			return <BoardTemplate level={level}
 								  dragonImages={[dragonImages.red, dragonImages.yellow]}
 								  fireImages={[fireImages.red, fireImages.yellow]}/>;
 		case 4:
-			return <BoardTemplate level={level} fire_spell={fire_spell}
+			return <BoardTemplate level={level}
 								  dragonImages={[dragonImages.blue, dragonImages.red]}
 								  fireImages={[fireImages.blue, fireImages.red]}/>;
 		default:
@@ -36,12 +36,12 @@ const Route = (fire_spell, level) => {
 	}
 };
 
-const Board = ({fire_spell, level}) => {
+const Board = ({level}) => {
 
 	return (
 		<section className = "board_section">
 			{
-				Route(fire_spell, level)
+				Route(level)
 			}
 		</section>
 		);

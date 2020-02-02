@@ -1,7 +1,8 @@
 import React from 'react';
-import ZTM_Logo from '../assets/img/ZTM.jpg'
+import './Footer.styles.css';
+import ZTM_Logo from '../../assets/img/ZTM.jpg'
 
-const Footer = () => {
+const FooterComponent = () => {
 	return (
 		<section className = "footer_section">
  		  <div className = "footer_section_left">	
@@ -25,4 +26,4 @@ const Footer = () => {
 		);
 }
 
-export default Footer;
+export default FooterComponent;

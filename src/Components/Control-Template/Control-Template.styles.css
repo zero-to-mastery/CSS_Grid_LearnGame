@@ -1,0 +1,38 @@
+.control_question {
+    color: white;
+    font-weight: 400;
+    margin: auto;
+}
+
+.control_mission {
+    font-size: 1.2vw;
+    width: 95%;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: left;
+    word-spacing: 0.2rem;
+}
+
+.control_form {
+    font-size: 1.2vw;
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: left;
+    word-spacing: 0.2rem;
+}
+
+.hint{
+    margin: 0;
+
+    color: dodgerblue;
+}
+
+.control_input{
+    width:90%;
+}
+
+.control_submit{
+    display: flex;
+    justify-content: flex-end;
+}

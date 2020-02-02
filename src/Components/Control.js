@@ -1,26 +1,29 @@
 import React from 'react';
-import Control1 from './Subcomponents/Level1/Control1';
-import Control2 from './Subcomponents/Level2/Control2';
-import Control3 from './Subcomponents/Level3/Control3';
-import Control4 from './Subcomponents/Level4/Control4';
 import ControlComplete from './MissionComplete/ControlComplete';
+import ControlTemplate from "./Control-Template/Control-Template.component";
+import { level1Hints, level2Hints, level3Hints, level4Hints} from "./Control-Template/Hints";
 
-const Route = (spell_input, spell_submit, level) => {
+const level1HeaderText = 'Our small ZTM town is now being attacked by the Dragons!!! We need your help. Hero! There are three types of dragons; red, blue and yellow. To slay that dragons, we need to spell fire that matches their color. Please help us now!';
+const level2HeaderText = 'Watch out! Another drogons are coming!!!';
+const level3HeaderText = '&nbsp;';
+const level4HeaderText = '&nbsp;';
+
+const Route = ( level) => {
 	switch(level) {
 		case 1:
-			return <Control1 spell_input={spell_input} spell_submit={spell_submit} level={level}/>;
+			return <ControlTemplate headerText={level1HeaderText} hints={level1Hints}/>;
 		case 2:
-			return <Control2 spell_input={spell_input} spell_submit={spell_submit} level={level}/>;
+			return <ControlTemplate headerText={level2HeaderText} hints={level2Hints}/>;
 		case 3:
-			return <Control3 spell_input={spell_input} spell_submit={spell_submit} level={level}/>;
+			return <ControlTemplate headerText={level3HeaderText} hints={level3Hints}/>;
 		case 4:
-			return <Control4 spell_input={spell_input} spell_submit={spell_submit} level={level}/>;
+			return <ControlTemplate headerText={level4HeaderText} hints={level4Hints}/>;
 		default:
 			return <ControlComplete />;
 	}
 };
 
-const Control = ({spell_input, spell_submit, level}) => {
+const Control = ({ level}) => {
 	return (
 		<section className = "control_section">
 			<div className = "control_container">
@@ -29,7 +32,7 @@ const Control = ({spell_input, spell_submit, level}) => {
 				<div className = "control_card">
 
 				{
-					Route(spell_input, spell_submit, level)
+					Route(level)
 				}
 
 				</div>

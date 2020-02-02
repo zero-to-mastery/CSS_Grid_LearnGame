@@ -1,6 +1,9 @@
 import React from 'react';
 import './Board-Template.styles.css';
 
+import { connect } from 'react-redux';
+import { createStructuredSelector } from "reselect";
+import { selectFireSpell } from "../../redux/control/control.selectors";
 
 const BoardTemplate = ({fire_spell, level, fireImages, dragonImages}) => {
 
@@ -34,4 +37,8 @@ const BoardTemplate = ({fire_spell, level, fireImages, dragonImages}) => {
     );
 };
 
-export default BoardTemplate;
+const mapStateToProps = createStructuredSelector({
+    fire_spell: selectFireSpell
+});
+
+export default connect(mapStateToProps)(BoardTemplate);

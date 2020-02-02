@@ -3,6 +3,24 @@
     display: flex; /*default value => flex*/
 }
 
+/*basic setup for board containig fires*/
+.board_fire_basic{
+    width: 49%; /*default = 49%*/
+    height: 100vh; /*default = 100vh*/
+    position: absolute; /*default = absolute*/
+}
+
+/*basic setup for board containig monsters*/
+.board_monster_basic{
+    width: 49%; /*default = 49%*/
+    height: 100vh; /*default = 100vh*/
+    position: absolute; /*default = absolute*/
+}
+
+.fires{
+    height:9vw;
+}
+
 /*board containing all monsters*/
 .board_monsters1{
     display: flex; /*default value => flex*/

@@ -15,7 +15,7 @@ const Control3 = ({spell_input, spell_submit, level}) => {
 				  	<p>&nbsp;</p>
 				</div>
 				<div className = "control_form">
-					<p className = "hint">It seems you need to spell mutiple times(2 lines)</p>
+					<p className = "hint">It seems you need to spell multiple times(2 lines)</p>
 					<p className = "hint">Here's another list of spells</p>
 					<ol style={{fontSize: "0.9rem"}}>
 						<li>align-items : flex-start</li>
