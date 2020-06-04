@@ -8,32 +8,28 @@ import './App.css';
 
 import { connect } from 'react-redux';
 
-import {createStructuredSelector} from "reselect";
-import {selectLevel, selectScore} from "./redux/control/control.selectors";
+import { createStructuredSelector } from 'reselect';
+import { selectLevel, selectLevels, selectScore } from './redux/control/control.selectors';
 
+const App = ({ level, levels, score }) => {
+  return (
+    <div className='App'>
+      <Header level={level} score={score} />
 
-const App = ({ level, score }) => {
+      <MainContainer>
+        <Control level={level} levels={levels} />
+        <Board level={level} levels={levels} />
+      </MainContainer>
 
-    return (
-      <div className="App">
-        <Header level={level} score={score}/>
-
-              <MainContainer>
-
-                <Control level={level}/>
-                <Board level={level}/>
-
-          </MainContainer>
-
-        <FooterComponent />
-      </div>
-    );
+      <FooterComponent />
+    </div>
+  );
 };
 
 const mapStateToProps = createStructuredSelector({
   level: selectLevel,
-  score: selectScore
+  levels: selectLevels,
+  score: selectScore,
 });
-
 
 export default connect(mapStateToProps)(App);
