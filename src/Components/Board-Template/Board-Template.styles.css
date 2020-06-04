@@ -1,49 +1,23 @@
 /*board containing all fires*/
-.board_fires{
-    display: flex; /*default value => flex*/
+.board_fires {
+  display: flex; /*default value => flex*/
 }
 
 /*basic setup for board containig fires*/
-.board_fire_basic{
-    width: 49%; /*default = 49%*/
-    height: 100vh; /*default = 100vh*/
-    position: absolute; /*default = absolute*/
+.board_fire_basic {
+  width: 49%; /*default = 49%*/
+  height: 100vh; /*default = 100vh*/
+  position: absolute; /*default = absolute*/
 }
 
 /*basic setup for board containig monsters*/
-.board_monster_basic{
-    width: 49%; /*default = 49%*/
-    height: 100vh; /*default = 100vh*/
-    position: absolute; /*default = absolute*/
+.board_monster_basic {
+  display: flex;
+  width: 49%; /*default = 49%*/
+  height: 100vh; /*default = 100vh*/
+  position: absolute; /*default = absolute*/
 }
 
-.fires{
-    height:9vw;
+.fires {
+  height: 9vw;
 }
-
-/*board containing all monsters*/
-.board_monsters1{
-    display: flex; /*default value => flex*/
-    justify-content: flex-end; /*You can edit it*/
-}
-/*board containing all monsters*/
-.board_monsters2{
-    display: flex; /*default value => flex*/
-    justify-content: space-around; /*You can edit it*/
-}
-
-/*board containing all monsters*/
-.board_monsters3{
-    display: flex; /*default value => flex*/
-    align-items: center;
-    justify-content: flex-end;
-}
-
-/*board containing all monsters*/
-.board_monsters4{
-    display: flex; /*default value => flex*/
-    align-items: flex-end;
-    flex-direction: row-reverse;
-}
-
-/*INSERT STYLES OF NEW LEVELS HERE*/
