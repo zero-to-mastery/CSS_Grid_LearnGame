@@ -123,9 +123,7 @@ Let say you want to add 'flex-flow' property. Here's a sample snippet.
 6. Add the level you made to the Levels object
    `this[1] = level_1;`
 
-That's it. Let's run this code!
-
-You like it? then make your pull request!!!
+That's it. You like it? Then make your pull request!!!
 
 ### Final Considerations
 
