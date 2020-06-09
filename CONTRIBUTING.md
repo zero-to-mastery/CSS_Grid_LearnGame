@@ -50,7 +50,7 @@ If you are taking Andrei's `Junior to Senior` course, then you could contribute 
 4.Core function optimization
 ```
 
-## Next Stage Development (Stage 4)
+## Next Stage: Development
 
 > It's going to be really fun. Follow along this guideline! And make your pull request!
 
@@ -86,11 +86,22 @@ Let say you want to add 'flex-flow' property. Here's a sample snippet.
 4. Update the data for the level
 
 ```
-  level: 1, // level number
-  header: 'Level Header', // level number
-  solution: { alignItems: 'flex-end' }, // level solution as a React-compatible object ( can have multiple properties)
-  dragonImages: [dragonImages.red, dragonImages.yellow], // array of dragon images you want to use
-  fireImages: [fireImages.red, fireImages.yellow], // array of fire images you want to use
+  // level number
+  level: 1,
+
+  // level header
+  header: 'Level Header',
+
+  // level solution (a React-compatible object that can have multiple properties)
+  solution: { alignItems: 'flex-end' },
+
+  // array of dragon images you want to use ( can be red, blue, or yellow )
+  dragonImages: [dragonImages.red, dragonImages.yellow],
+
+  // array of fire images you want to use ( can be red, blue, or yellow )
+  fireImages: [fireImages.red, fireImages.yellow],
+
+  // a React component that gives the player hints for the current level
   hints: (
     <div>
       <p className='hint'>It seems you need to spell mutiple times(2 lines)</p>
