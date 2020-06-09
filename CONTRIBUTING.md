@@ -127,24 +127,10 @@ That's it. Let's run this code!
 
 You like it? then make your pull request!!!
 
-### Additional step
+### Final Considerations
 
-- Okay. You want to change the colors of fires and monsters? Go to `Board4_markedToDelete.js`. We have three types of fires and dragons. You can simply change the imported image, and then the view of your stage will be changed.
+I think that's all for the guideline `How to build next stage`!
 
-Choose what you want from this snippet below.
+Before you make a pull request, please make sure that noone already developed `stage #4` in the ZTM master repository. In that case, you should sync first and then change the number of your stage accordingly.
 
-```javascript
-import DragonR from '../../img/dragon_red.png';
-import DragonY from '../../img/dragon_yellow.png';
-import DragonB from '../../img/dragon_blue.png';
-
-import FireR from '../../img/fire_red.png';
-import FireY from '../../img/fire_yellow.png';
-import FireB from '../../img/fire_blue.png';
-```
-
-- Okay. You want to give some hint for the players? Go to `Control4.js`. Edit the text. You want to change some css? You can customize it! Create a new classname. And put it at `Level4.css`.
-
-I think that's all for the guideline `How to build next stage`! Before you make a pull request, please make sure that if someone already developed `stage #4` in the ZTM master repository. In that case, you should sync first and then change the name of your stage, at #5 or accordingly.
-
-If you have anyquestion, please leave a comment on Discord channel #group-project.
+If you have any questions, please leave a comment on Discord channel #group-project.
