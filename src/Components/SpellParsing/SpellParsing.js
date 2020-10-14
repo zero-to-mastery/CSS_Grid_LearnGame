@@ -50,6 +50,12 @@ const makeReactCSS = (styleKey, styleValue) => {
     case 'align-content':
       key = 'alignContent';
       break;
+    case 'order':
+      key = 'order';
+      break;
+    case 'align-self':
+      key = 'alignSelf';
+      break;
     default:
       return [];
   }

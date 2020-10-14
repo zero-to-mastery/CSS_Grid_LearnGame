@@ -3,6 +3,7 @@ import level_2 from './Levels/Level-2';
 import level_3 from './Levels/Level-3';
 import level_4 from './Levels/Level-4';
 import level_5 from './Levels/Level-5';
+import level_6 from './Levels/Level-6';
 
 class Levels {
   constructor() {
@@ -12,6 +13,7 @@ class Levels {
     this[3] = level_3;
     this[4] = level_4;
     this[5] = level_5;
+    this[6] = level_6;
   }
 }
 
