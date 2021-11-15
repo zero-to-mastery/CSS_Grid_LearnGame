@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.styles.css';
-import ZTM_Logo from '../../assets/img/ZTM.jpg'
+import ZTM_Logo from '../../assets/img/ZTM.jpg';
 
 const Header = ({level, score}) => {
 	return (
