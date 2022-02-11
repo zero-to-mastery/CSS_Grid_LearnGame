@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://april9288.github.io/CssGridGame/",
   "dependencies": {
-    "ajv": "^6.11.0",
+    "ajv": "^6.12.3",
     "gh-pages": "^2.2.0",
     "lodash": "^4.17.21",
     "react": "^16.12.0",
