@@ -1,12 +1,12 @@
 import React from 'react';
 import './Level0.css';
-import { connect } from 'react-redux';
+import { connect, useSelector } from 'react-redux';
 import {createStructuredSelector} from "reselect";
 import {selectUserCredentials} from "../../redux/user/user.selectors";
 
 const mm = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-const showCertificate = (name, email) => (
+const showCertificate = (name, email, score) => (
 	<section style={{width:"99%"}}>
 		<div className = "certificate">
 
@@ -22,7 +22,7 @@ const showCertificate = (name, email) => (
 					<span style={{fontSize:10}}><b>{email}</b></span><br/><br/>
 					<span style={{fontSize:15}}><i>has completed the course</i></span> <br/><br/>
 					<span style={{fontSize:10}}>ZTM CSS Grid Master</span> <br/><br/>
-					<span style={{fontSize:10}}>with score of <b>1000 points</b></span> <br/><br/><br/><br/>
+					<span style={{fontSize:10}}>with a score of <b>{score} points</b></span> <br/><br/><br/><br/>
 					<span style={{fontSize:15}}><i>dated {mm[(new Date()).getMonth()] + ' ' + (new Date()).getDate() + ' ' + (new Date()).getFullYear()}</i></span><br/> {/* .getDay() doesn't return correct day */}
 				</div>
 			</div>
@@ -38,8 +38,9 @@ const showCertificate = (name, email) => (
 
 const BoardComplete = ({userCredentials}) => {
 	const {name, email} = userCredentials;
+	const score = useSelector((state) => state["control"].score);
 	return (
-		(name) ? showCertificate(name, email) : ( //cleaned up the code
+		(name) ? showCertificate(name, email, score) : ( //cleaned up the code
 			<section style={{width:"99%"}}>
 				&nbsp;{/*empty space character*/}
 			</section>
