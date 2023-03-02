@@ -11,3 +11,5 @@ export const selectScore = createSelector([selectControl], control => control.sc
 export const selectFireSpell = createSelector([selectControl], control => control.fire_spell);
 
 export const selectSpellInput = createSelector([selectControl], control => control.spell_input);
+
+export const selectErrorMessage = createSelector([selectControl], control => control.error_message);

@@ -2,10 +2,10 @@ import React from 'react';
 import './Control-Template.styles.css';
 import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
-import { selectLevel, selectSpellInput } from '../../redux/control/control.selectors';
+import { selectLevel, selectSpellInput, selectErrorMessage } from '../../redux/control/control.selectors';
 import { HandleSpellInputChange, OnSpellSubmit } from '../../redux/control/control.actions';
 
-const ControlTemplate = ({ submitSpell, spell_input, hints, headerText, level, handleChange }) => {
+const ControlTemplate = ({ submitSpell, spell_input, hints, headerText, level, handleChange, error_message }) => {
   //they are the only unique things to each Control //level comes from reducer now
   //the caveat of using controlTemplate is that ,now , we have to clear our spell_input every time a user submit the spell correctly
   //to make classnames dynamic to the level value.
@@ -22,18 +22,24 @@ const ControlTemplate = ({ submitSpell, spell_input, hints, headerText, level, h
           {hints}
 
           <p className='hint'>Don't forget to finish your spell with semicolon &#59; </p>
-          <p>#fire_spell &#123;</p>
-          <p>display: flex;</p>
           <section>
-            <textarea
-              className='control_input'
-              type='input'
-              value={spell_input} //to clear the textarea with redux
-              onChange={handleChange}
-              autoFocus={true}
-              required={true}
-            />
+            <p>#board &#123;</p>
+            <div className="code_indent">
+              <p>display: flex;</p>
+              <textarea
+                className='control_input'
+                type='input'
+                value={spell_input} //to clear the textarea with redux
+                onChange={handleChange}
+                autoFocus={true}
+                required={true}
+              />
+            </div>
+            
             <p>&#125;</p>
+            {
+              error_message && <span className='error_message'> {error_message} </span>
+            }
             <div className='control_submit'>
               <button className='record_btn' onClick={() => submitSpell(level)}>
                 Next
@@ -49,6 +55,7 @@ const ControlTemplate = ({ submitSpell, spell_input, hints, headerText, level, h
 const mapStateToProps = createStructuredSelector({
   level: selectLevel,
   spell_input: selectSpellInput,
+  error_message: selectErrorMessage,
 });
 
 const mapDispatchToProps = dispatch => ({

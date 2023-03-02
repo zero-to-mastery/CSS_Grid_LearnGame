@@ -9,6 +9,7 @@ const INITIAL_STATE = {
   fire_spell: {}, //this is input that users type on <input />
   spell_input: '',
   levels: new Levels(), //an object with all of the levels
+  error_message: ""
 };
 
 const ControlReducer = (state = INITIAL_STATE, action) => {
@@ -20,16 +21,19 @@ const ControlReducer = (state = INITIAL_STATE, action) => {
         score: state.score + 100,
         spell_input: '',
         fire_spell: {},
+        error_message: "",
       };
     case ControlActionTypes.INCORRECT_SPELL_INPUT:
       return {
         ...state, //we can decrease scores or show errors from here if we want
+        error_message: `Oops, your spell misfired!`,
       };
     case ControlActionTypes.SPELL_INPUT_CHANGE:
       return {
         ...state,
         spell_input: action.payload,
         fire_spell: SpellParsing(state.spell_input),
+        error_message: "",
       };
     default:
       return state;
