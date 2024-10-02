@@ -36,3 +36,11 @@
     display: flex;
     justify-content: flex-end;
 }
+
+.error_message {
+    color: red;
+}
+
+.code_indent {
+    padding-left: 2rem;
+}
