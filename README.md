@@ -1,11 +1,12 @@
 # CSS_Grid_LearnGame
-> This will be a game to learn CSS Grid in a Game Mode Style, to make learning more fun! 
+
+> This will be a game to learn CSS Grid in a Game Mode Style, to make learning more fun!
 
 ![](sample.jpg)
 
-* [Play Here!](https://april9288.github.io/CssGridGame/) - Temporarily deployed address.
+- [Play Here!](https://april9288.github.io/CssGridGame/) - Temporarily deployed address.
 
-It's bascially a froggy-flexbox style game app built with React.js. Currently only 3 stages have been developed. After stage #4 is totally up to you. Be creative! If you want to enjoy this app in your local computer, then download the source and have your computer setup with Node.js. Then you are good to go. If you feel like you want to contribute, then please read [CONTRIBUTING.md](https://github.com/zero-to-mastery/CSS_Grid_LearnGame/blob/master/CONTRIBUTING.md) before you make a pull request. 
+It's bascially a froggy-flexbox style game app built with React.js. Currently only 3 stages have been developed. After stage #4 is totally up to you. Be creative! If you want to enjoy this app in your local computer, then download the source and have your computer setup with Node.js. Then you are good to go. If you feel like you want to contribute, then please read [CONTRIBUTING.md](https://github.com/zero-to-mastery/CSS_Grid_LearnGame/blob/master/CONTRIBUTING.md) before you make a pull request.
 
 ## Getting Started
 
@@ -15,7 +16,7 @@ If you want to download and run this website on your computer, you need to insta
 
 If you don't have Node.js setup on your computer, please click below link and download it first.
 
-* [Node.js](https://nodejs.org/en/) - The official Node.js website to download
+- [Node.js](https://nodejs.org/en/) - The official Node.js website to download
 
 ### Installing
 
@@ -34,8 +35,8 @@ So it will automatically run in your local server.
 
 ## Built With
 
-* [React.js](https://reactjs.org/) - The official React.js website
-* [Lodash](https://lodash.com/) - The official Lodash website
+- [React.js](https://reactjs.org/) - The official React.js website
+- [Lodash](https://lodash.com/) - The official Lodash website
 
 ## License
 
@@ -47,11 +48,20 @@ Please read [CONTRIBUTING.md](https://github.com/zero-to-mastery/CSS_Grid_LearnG
 
 ## Acknowledgments
 
-* [Freepik](https://www.freepik.com/free-photos-vectors/background) - Background image created by Freepik 
-* [Flaticon](https://www.flaticon.com/) - Dragon icons made by Flaticon
+- [Freepik](https://www.freepik.com/free-photos-vectors/background) - Background image created by Freepik
+- [Flaticon](https://www.flaticon.com/) - Dragon icons made by Flaticon
 
 ## Meta
 
-* [ZeroToMaster Web](https://zerotomastery.io/?utm_source=github&utm_medium=CSS_Grid_LearnGame) - The official ZeroToMastery website
-* [HowToContribute](https://github.com/zero-to-mastery/start-here-guidelines) - Open source contribution guideline for all Zero to Master course students
+- [ZeroToMaster Web](https://zerotomastery.io/?utm_source=github&utm_medium=CSS_Grid_LearnGame) - The official ZeroToMastery website
+- [HowToContribute](https://github.com/zero-to-mastery/start-here-guidelines) - Open source contribution guideline for all Zero to Master course students
 
+## Upgrade Log
+
+**June 11, 2026**
+
+- Replaced react-scripts with Vite
+- Updated React 16 → 19 with createRoot
+- Consolidated redux, redux-thunk, reselect, redux-logger into @reduxjs/toolkit
+- Fixed all the .js → .jsx renames for Vite compatibility
+- Cleaned up the Redux store setup
